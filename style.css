@@ -10,11 +10,7 @@ html {
 
 body {
     min-height: 100vh;
-    overflow: hidden;
-    background-color: #6E9B68;
-    background-image: url("main.gif");
-    background-position:  center bottom;
-    background-repeat: repeat-x;
+    color: #7d7d7d;
     margin: 0;
     padding: 0;
 }
@@ -25,10 +21,10 @@ nav {
 }
 
 .cool > li > a {
-    color: yellow;
+    color: #FFF;
+    background-color: #900;
     text-decoration: none;
     font-size: 20px;
-    background: rgba(0,0,0,0.2);
     padding:10px 20px;
     display: inline-block;
     margin: 20px;
@@ -74,7 +70,7 @@ nav ul {
     width:100px;
     height:100px;
     position: absolute;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255,255,255,0.3);
     border-radius: 4px;
     box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
     transition:all 0.3s, opacity 0.1s, translate 0.2s;
@@ -112,6 +108,14 @@ nav ul {
     margin-right:20px;
 }
 
+.bio {
+    min-width:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+
 .courses {
     min-width:300px;
 }
@@ -140,3 +144,10 @@ a.button {
 .button[href*=twitter] { background: #019FE9; }
 .button[href*=facebook] { background: #3B5998; }
 .button[href*=courses] { background: #ffc600; }
+
+.logo {
+    margin: 20px auto 10px;
+    display: block;
+    width: 86px;
+    height: 189px;
+}
