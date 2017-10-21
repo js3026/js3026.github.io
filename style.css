@@ -10,6 +10,9 @@ html {
 
 body {
     min-height: 100vh;
+    background-image: url("bg.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
     color: #7d7d7d;
     margin: 0;
     padding: 0;
@@ -70,7 +73,7 @@ nav ul {
     width:100px;
     height:100px;
     position: absolute;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255,255,255,1);
     border-radius: 4px;
     box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
     transition:all 0.3s, opacity 0.1s, translate 0.2s;
@@ -91,20 +94,21 @@ nav ul {
     height: 0;
     border-style: solid;
     border-width: 0 10px 10px 10px;
-    border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
+    border-color: transparent transparent rgba(255, 255, 255, 1) transparent;
     display: block;
 }
 
 .bio {
-    min-width:500px;
+    min-width:600px;
     display:flex;
     justify-content: center;
     align-items: center;
     line-height: 1.7;
 }
 
-.bio img {
+.bio p img {
     float:left;
+    width: 150px;
     margin-right:20px;
 }
 
